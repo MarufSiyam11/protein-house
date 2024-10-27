@@ -21,42 +21,44 @@ function Navbar() {
 
   return (
     <section>
-      <div className="flex justify-around w-full mx-auto bg-black text-white">
-        <div className="w-[55px] md:w-[75px] h-[35px] p-1 md:h-[55px] flex">
-          {" "}
-          <img className="bg-black" src={logo} alt="" />
-          <h3 className="font-semibold text-sm ">OPTIMUM NUTRITION</h3>
-        </div>
-        <div className="relative">
-          <input
-            className="rounded-3xl py-3 px-3 outline-none text-xs w-[350px] pr-10 hidden md:block lg:block"
-            placeholder="Search for Products"
-            type="text"
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-5 h-5 text-green-900 absolute right-3 top-1/2 transform -translate-y-1/2 hidden md:block lg:block"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+      <div className="hidden md:block lg:block">
+        <div className="flex justify-around w-full mx-auto bg-black text-white">
+          <div className="w-[55px] md:w-[75px] h-[35px] p-1 md:h-[55px] flex">
+            {" "}
+            <img className="bg-black" src={logo} alt="" />
+            <h3 className="font-semibold text-sm ">OPTIMUM NUTRITION</h3>
+          </div>
+          <div className="relative">
+            <input
+              className=" py-3 px-3  text-black mt-2 outline-none text-xs w-[400px] pr-10 hidden md:block lg:block"
+              placeholder="Search for Products"
+              type="search"
             />
-          </svg>
-        </div>
-        <div className="flex gap-2  md:gap-8 p-3 md:mr-10 ">
-          <a className="hidden md:block lg:block" href="">
-            Sign In /Register
-          </a>
-          <VscAccount className="text-2xl" />
-          <IoCartOutline className="text-2xl" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-5 h-5 text-green-900 absolute right-3 top-1/2 transform -translate-y-1/2 hidden md:block lg:block"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+          <div className="flex gap-5   p-3 ">
+            <a className="pr-3" href="">
+              Sign In /Register
+            </a>
+            <VscAccount className="text-2xl" />
+            <IoCartOutline className="text-2xl" />
+          </div>
         </div>
       </div>
-      <div className="bg-gray-100 min-h-screen" onClick={closeSidebar}>
+      <div className="bg-black min-h-screen" onClick={closeSidebar}>
         <div className="h-screen flex overflow-hidden bg-gray-200">
           {/* Sidebar */}
           <div
@@ -137,10 +139,27 @@ function Navbar() {
           {/* Content */}
           <div className="flex-1 flex flex-col overflow-hidden">
             {/* Navbar */}
-            <div className="bg-white shadow md:hidden">
+            <div className="bg-black shadow md:hidden">
               <div className="container mx-auto">
+                {" "}
                 <div className="flex justify-between items-center py-4 px-2">
-                  <h1 className="text-xl font-semibold">Animated Drawer</h1>
+                  <div className="flex justify-around w-full mx-auto bg-black text-white">
+                    <div className="w-[55px] md:w-[75px] h-[35px]  md:h-[55px] flex">
+                      {" "}
+                      <img className="bg-black" src={logo} alt="" />
+                      <h3 className="font-semibold text-sm ">
+                        OPTIMUM NUTRITION
+                      </h3>
+                    </div>
+
+                    <div className="flex gap-2  md:gap-8 p-3 md:mr-10 ">
+                      <a className="hidden md:block lg:block" href="">
+                        Sign In /Register
+                      </a>
+                      <VscAccount className="text-2xl" />
+                      <IoCartOutline className="text-2xl" />
+                    </div>
+                  </div>
 
                   <button
                     className="text-gray-500 hover:text-gray-600"
