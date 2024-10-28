@@ -142,7 +142,7 @@ function Navbar() {
           {/* Content */}
           <div className="flex-1 flex flex-col   ">
             {/* Navbar */}
-            <div className="bg-black shadow md:hidden">
+            <div className="bg-black h-[120px] shadow md:hidden">
               <div className="container mx-auto">
                 {" "}
                 <div className="flex justify-between items-center py-4 px-2">
@@ -187,7 +187,29 @@ function Navbar() {
                   </button>
                 </div>
               </div>
+              <div className="flex justify-center  ">
+                <input
+                  className=" py-3 px-3  text-black mt-2 outline-none text-xs w-[200px] pr-10 block md:hidden lg:hidden"
+                  placeholder="Search for Products"
+                  type="search"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 text-green-900 absolute right-3 top-1/2 transform -translate-y-1/2 hidden md:block lg:block"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </div>
             </div>
+
             {/* Content Body */}
             <div className="flex-1 overflow-auto   p-4 hidden md:block lg:block">
               <ul className="mt-4 flex  gap-10 mx-auto justify-center">
