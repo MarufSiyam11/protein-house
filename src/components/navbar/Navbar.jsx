@@ -4,7 +4,7 @@ import { IoMdHome } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
 import { IoCartOutline } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/on-logo-white.svg";
 function Navbar() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
@@ -20,15 +20,18 @@ function Navbar() {
   };
 
   return (
-    <section>
-      <div className="hidden md:block lg:block">
-        <div className="flex justify-around w-full mx-auto bg-black text-white">
-          <div className="w-[55px] md:w-[75px] h-[35px] p-1 md:h-[55px] flex">
+    <section className="w-full fixed">
+      <div className="hidden md:block bg-black lg:block h-[80px]">
+        <div className="flex justify-around pt-4 w-full mx-auto bg-black text-white">
+          <div className=" ">
             {" "}
-            <img className="bg-black" src={logo} alt="" />
-            <h3 className="font-semibold text-sm ">OPTIMUM NUTRITION</h3>
+            <img
+              className="bg-black w-[180px]  h-[55px]  text-white"
+              src={logo}
+              alt=""
+            />
           </div>
-          <div className="relative">
+          <div className="relative ml-40">
             <input
               className=" py-3 px-3  text-black mt-2 outline-none text-xs w-[400px] pr-10 hidden md:block lg:block"
               placeholder="Search for Products"
@@ -144,12 +147,14 @@ function Navbar() {
                 {" "}
                 <div className="flex justify-between items-center py-4 px-2">
                   <div className="flex justify-around w-full mx-auto bg-black text-white">
-                    <div className="w-[55px] md:w-[75px] h-[35px]  md:h-[55px] flex">
+                    <div className=" ">
                       {" "}
-                      <img className="bg-black" src={logo} alt="" />
-                      <h3 className="font-semibold text-sm ">
-                        OPTIMUM NUTRITION
-                      </h3>
+                      <img
+                        className="bg-black w-[180px]  h-[55px]  text-white"
+                        src={logo}
+                        alt=""
+                      />
+                      {/* <h3 className="font-semibold text-xl ">OPTIMUM NUTRITION</h3> */}
                     </div>
 
                     <div className="flex gap-2  md:gap-8 p-3 md:mr-10 ">
@@ -184,9 +189,73 @@ function Navbar() {
               </div>
             </div>
             {/* Content Body */}
-            <div className="flex-1 overflow-auto p-4">
-              <h1 className="text-2xl font-semibold">Welcome to our website</h1>
-              <p>... Content goes here ...</p>
+            <div className="flex-1 bg-white overflow-auto p-4 hidden md:block lg:block">
+              <ul className="mt-4 flex  gap-10 mx-auto justify-center">
+                <li className="mb-2  pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    Shop by Product
+                  </a>
+                </li>
+                <li className="mb-2  pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    Shop by Goal
+                  </a>
+                </li>
+                <li className="mb-2 pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    Articles
+                  </a>
+                </li>
+                <li className="mb-2 pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    Ambassaadors
+                  </a>
+                </li>
+                <li className="mb-2 pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    Recipes
+                  </a>
+                </li>
+                <li className="mb-2 pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    McLaren
+                  </a>
+                </li>
+                <li className="mb-2 pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    Our Quality
+                  </a>
+                </li>
+                <li className="mb-2 pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                  <a
+                    href="#"
+                    className="block  hover:bg-slate-400 hover:text-white p-2"
+                  >
+                    Protein Calculator
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
