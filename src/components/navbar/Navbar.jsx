@@ -62,7 +62,7 @@ function Navbar() {
         </div>
       </div>
       <div className="bg-black min-h-screen" onClick={closeSidebar}>
-        <div className="h-screen flex overflow-hidden bg-gray-200">
+        <div className="h-screen flex overflow-hidden bg-white">
           {/* Sidebar */}
           <div
             className={`absolute md:hidden  bg-white w-48 sm:w-56 min-h-screen overflow-y-auto transition-transform transform ease-in-out duration-300 ${
@@ -71,8 +71,8 @@ function Navbar() {
             id="sidebar"
           >
             {/* Sidebar Content */}
-            <div className="p-4 ">
-              <div className="flex justify-between px-3 py-3 border-b-2 border-gray-300 md:border-none">
+            <div className="p-4  relative">
+              <div className="flex justify-between px-3 py-3 border-b-2 border-gray-300 ">
                 <a href="/">
                   {" "}
                   <IoMdHome className="text-3xl" />
@@ -189,7 +189,7 @@ function Navbar() {
               </div>
             </div>
             {/* Content Body */}
-            <div className="flex-1  bg-white overflow-auto  border-b-2 border-gray-300  p-4 hidden md:block lg:block">
+            <div className="flex-1 overflow-auto   p-4 hidden md:block lg:block">
               <ul className="mt-4 flex  gap-10 mx-auto justify-center">
                 <li className="mb-2  pb-3 font-bold border-b-2 border-gray-300 md:border-none">
                   <a
