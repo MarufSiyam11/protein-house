@@ -20,7 +20,7 @@ function Navbar() {
   };
 
   return (
-    <section className="w-full fixed">
+    <section className="w-full h-[160px] ">
       <div className="hidden md:block bg-black lg:block h-[80px]">
         <div className="flex justify-around pt-4 w-full mx-auto bg-black text-white">
           <div className=" ">
@@ -130,7 +130,7 @@ function Navbar() {
                     Sign In / Register
                   </a>
                 </li>
-                <li className="mb-2 pb-3 font-bold border-b-2 border-gray-300 md:border-none">
+                <li className="mb-2 pb-3 font-bold ">
                   <a href="#" className="block hover:text-indigo-400">
                     Chose location
                   </a>
@@ -140,7 +140,7 @@ function Navbar() {
           </div>
 
           {/* Content */}
-          <div className="flex-1 flex flex-col overflow-hidden">
+          <div className="flex-1 flex flex-col   ">
             {/* Navbar */}
             <div className="bg-black shadow md:hidden">
               <div className="container mx-auto">
@@ -189,7 +189,7 @@ function Navbar() {
               </div>
             </div>
             {/* Content Body */}
-            <div className="flex-1 bg-white overflow-auto p-4 hidden md:block lg:block">
+            <div className="flex-1  bg-white overflow-auto  border-b-2 border-gray-300  p-4 hidden md:block lg:block">
               <ul className="mt-4 flex  gap-10 mx-auto justify-center">
                 <li className="mb-2  pb-3 font-bold border-b-2 border-gray-300 md:border-none">
                   <a
